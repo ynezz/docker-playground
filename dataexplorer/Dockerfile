@@ -13,7 +13,7 @@ ARG USER_GID=1000
 ARG USER_NAME=foobar
 
 RUN echo force-unsafe-io > /etc/dpkg/dpkg.cfg.d/docker-apt-speedup
-RUN sed -i "s/archive.ubuntu.com/$apt_install/" /etc/apt/sources.list
+RUN sed -i "s/archive.ubuntu.com/$apt_mirror/" /etc/apt/sources.list
 RUN apt-get update
 RUN $apt_install libcanberra-gtk3-module
 
