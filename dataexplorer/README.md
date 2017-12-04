@@ -1,0 +1,6 @@
+# DataExplorer
+## Usage
+
+```
+$ make
+```
